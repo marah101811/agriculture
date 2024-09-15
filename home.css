@@ -1,0 +1,110 @@
+body {
+  font-family: 'Arial', serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('ricefield.jpeg');
+  background-size: cover; /* This ensures that the background image covers the entire body */
+  background-repeat: no-repeat; /* This prevents the background image from repeating */
+}
+
+header {
+  background-color: forestgreen;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1em;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+header img {
+  height: 100px;
+  width: 100px;
+  margin-right: 1em;
+}
+
+header p {
+  margin-top: 10px; /* Adjusted for better spacing */
+  font-size: 24px; /* Adjusted for better readability */
+  text-align: center; /* Centered text on smaller screens */
+}
+
+.nav {
+  background-color: #f2f2f2;
+  padding: 1em;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow navigation items to wrap */
+}
+
+.navbar a {
+  color: #333;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: center; /* Center cards horizontally */
+  align-items: center;
+  padding: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+nav ul li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  padding: 10px 0;
+  border-radius: 0 0 5px 5px;
+}
+
+nav ul li:hover ul {
+  display: block;
+}
+
+nav ul li ul li {
+  display: block;
+}
+
+nav ul li ul li a {
+  padding: 8px 20px;
+}
+
+nav ul li ul li:hover a {
+  background-color: #f0f0f0;
+}
+
+.card {
+  display: inline-block;
+  margin: 10px; /* Adjust spacing between cards */
+  max-width: 300px; /* Limit card width for smaller screens */
+}

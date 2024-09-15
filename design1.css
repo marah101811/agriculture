@@ -1,0 +1,126 @@
+.dashboard-header {
+    color: green;
+    font-size: 15px;
+    font-weight: bold;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.dashboard-nav {
+    padding: 10px;
+    background-color: green;
+    width: 100%; /* Set width to 100% */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: auto; /* Change height to auto */
+    overflow-y: auto;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.dashboard-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.dashboard-nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+.dashboard-nav a:hover {
+    background-color: #555;
+}
+
+.dashboard-content {
+    padding: 10px;
+    background-color: yellow;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 50px; /* Adjust margin-top for the fixed navigation */
+}
+
+.tag1 {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    font-family: Arial;
+    text-align: center; /* Correct property name */
+}
+
+.tag2 {
+    color: white;
+    font-size: 20px;
+}
+
+.container {
+    margin: 20px auto; /* Center the container horizontally */
+    width: 95%; /* Set a maximum width */
+}
+
+.button {
+    display: block; /* Change to block for responsiveness */
+    margin: 10px auto; /* Center the button */
+    background-color: green;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 15px;
+}
+
+.button:hover {
+    background-color: yellow;
+}
+
+.button2:hover {
+    background-color: red;
+    margin-left: 0; /* Remove margin-left */
+}
+/* Add media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    /* Adjust font size and margin for smaller screens */
+    .tag1 {
+        font-size: 12px;
+        margin-bottom: 10px;
+    }
+    th {
+        font-size: 60%;
+        margin-left: 0;
+    }
+    /* Ensure table is not wider than its container */
+    table {
+        max-width: 100%;
+    }
+}
+
+/* Ensure table is not wider than its container */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border: 1px solid #dddddd;
+}
+
+th {
+    width: 50%;
+    font-size: 70%;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+    max-width: 1200px; /* Set maximum width for container */
+}

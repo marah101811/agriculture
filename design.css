@@ -1,0 +1,94 @@
+/* Common styles */
+.dashboard-header {
+  color: green;
+  font-size: 13px;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.dashboard-nav {
+  padding: 10px;
+  background-color: green;
+  width: 100%; /* Full width on smaller screens */
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 100%; /* Full height on smaller screens */
+  overflow-y: auto;
+}
+
+.dashboard-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 5px;
+  display: block;
+}
+
+.dashboard-nav a:hover {
+  background-color: #555;
+}
+
+.dashboard-content {
+  padding: 10px;
+  background-color: yellow;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-left: 0; /* Remove margin */
+}
+
+/* Responsive styles */
+@media screen and (min-width: 768px) {
+  .container {
+    display: flex; /* Use flexbox for layout */
+  }
+
+  .tag1 {
+    color: black;
+    font-size: 15px;
+    flex: 1; /* Take up remaining space */
+    text-align: center; /* Center align text */
+  }
+
+  .dashboard-nav {
+    width: 300px;
+    height: auto; /* Auto height on larger screens */
+    margin-top: 0; /* Remove margin */
+  }
+
+  .dashboard-content {
+    margin-left: 320px;
+  }
+}
+.logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    max-width: 100%; /* Ensure the logo doesn't exceed its container's width */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.title {
+    margin-top: 10px; /* Add some spacing between the logo and title */
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .logo-container {
+        flex-direction: row; /* Align items horizontally on smaller screens */
+        justify-content: center; /* Center items horizontally */
+    }
+
+    .logo {
+        margin-right: 10px; /* Add some spacing between the logo and title */
+    }
+
+    .title {
+        margin-top: 0; /* Remove margin on top */
+        text-align: left; /* Align text to the left */
+    }
+}
